@@ -1,0 +1,7 @@
+<div class="formpage-container">
+    <h2 class="formpage-container--main-title">The Forecast Weather App</h2>
+
+    <form class="formpage-container--input-div" (ngSubmit)="searchCityWeather(search)">
+        <input [(ngModel)]="search" type="text" id="search" name="search" minlength="4" placeholder="Search" class="formpage-container--input-div--input" /><img>
+    </form>
+</div>
