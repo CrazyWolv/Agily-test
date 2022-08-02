@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { NotFoundPageComponent } from './notFoundPage';
+import { ComponentsModules } from 'src/modules/components.module';
 
 @NgModule({
   declarations: [
     NotFoundPageComponent
   ],
   imports: [
-    BrowserModule, CommonModule,
+    ComponentsModules
   ],
   providers: [],
   bootstrap: [NotFoundPageComponent]

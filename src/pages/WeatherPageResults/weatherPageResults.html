@@ -1,0 +1,24 @@
+<div class="weatherResults-container">
+    <section class="weatherResults-container--left-section">
+        <div class="weatherResults-container--left-section--button-group">
+            <div class="weatherResults-container--left-section--button">
+                <img src="#">
+                <span>The Forecast Weather App</span>
+            </div>
+    
+            <div class="weatherResults-container--left-section--button-goBack" (click)="goBackToSearch()">
+                <p><span>❰</span> Return</p>
+            </div>
+        </div>
+    
+        <div class="weatherResults-container--left-section--miniCards-list">
+            <app-miniCard class="weatherResults-container--left-section--miniCards-list--minicard" *ngFor="let day of Days" [miniCard]="day"></app-miniCard>
+        </div>
+        </section>
+
+        <section class="weatherResults-container--right-section">
+            <img class="weatherResults-container--right-section--image" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg">
+
+            <app-card class="weatherResults-container--right-section--card" [card]="day1"></app-card>
+        </section>
+</div>

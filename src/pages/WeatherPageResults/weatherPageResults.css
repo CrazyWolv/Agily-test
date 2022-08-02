@@ -1,0 +1,85 @@
+.weatherResults-container{
+    height:100vh;
+    background-color:rgba(19, 70, 1, 0.7);
+    overflow:auto;
+}
+
+.weatherResults-container--left-section--button-group{
+    position:fixed;
+    text-align:left;
+    flex-direction: column;
+    left:5%; 
+    top:1.5rem;
+}
+
+.weatherResults-container--left-section--button{
+    display:flex;
+    width:200px;
+}
+.weatherResults-container--left-section--button span{
+    background: -webkit-linear-gradient(#2EC867, #E8E9A1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:bold;
+    font-size:1.2rem;
+    padding-right:1.5rem;
+}
+
+.weatherResults-container--left-section--button-goBack{
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+.weatherResults-container--left-section{
+    margin-left: 2%;
+    width: 60%;
+    margin-top: 8rem;
+}
+.weatherResults-container--left-section--miniCards-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.weatherResults-container--left-section--miniCards-list--minicard{
+    width: 25%;
+    margin: 5px;
+}
+
+.weatherResults-container--right-section{
+    position: fixed;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 20%;
+    right: 5%;
+    top: 3rem;
+}
+
+.weatherResults-container--right-section--card{
+    width: 100%;
+}
+
+.weatherResults-container--right-section--image{
+    margin-top:20px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+@media screen and (min-height: 650px) and (orientation: portrait) {
+
+}
+
+@media screen and (min-height: 750px){
+
+}

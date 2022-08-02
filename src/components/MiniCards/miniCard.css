@@ -1,0 +1,51 @@
+.minicard-container{
+    cursor:pointer;
+    margin:10px 0;
+    background-color:white;
+    color: #134601;
+    -webkit-box-shadow: 0px 0px 11px 5px #134601;
+    box-shadow: 0px 0px 11px 5px #134601;
+    padding:10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -webkit-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -moz-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -ms-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -o-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+}
+
+.minicard-container.clicked{
+    background-color:#3C717B;
+    color:white;
+    box-shadow: none;
+    transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -webkit-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -moz-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -ms-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+    -o-transition: background-color ease-in-out .5s, color ease-in-out .5s, box-shadow ease-in-out .5s;
+}
+
+.minicard-content{
+    text-align:center;
+    position:relative;
+}
+
+.minicard-content--main-content{
+    font-weight:bold; 
+    color:#134601;
+    padding-top:10%;
+    font-size:1.8rem;
+}
+.minicard-content--main-content img{
+    width:125px;
+    height:125px;
+}
+.minicard-content--main-content--text{
+    display:flex;
+    flex-direction: column;
+    padding:15px 0; 
+}

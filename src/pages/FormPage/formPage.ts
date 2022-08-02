@@ -17,7 +17,7 @@ export class FormPageComponent {
 
   public searchCityWeather(search:string){
     if(this.search.length > 3){
-      this.router.navigateByUrl('weather', { state: { cityName: this.search }})
+      this.router.navigate(['search/', search], { state: { cityName: this.search }})
     }else{
       this.message = "Veuillez renseigner le nom d'une ville d'au moins 3 caractères."
     }

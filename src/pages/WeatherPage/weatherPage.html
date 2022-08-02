@@ -1,3 +1,26 @@
-<div class="weather--container">
-    <h2>Weather Page for {{ cityName }}</h2>
+<div class="weather-container">
+    <section class="weather-container--left-section">
+    <div class="weather-container--left-section--button">
+        <img src="#">
+        <span>The Forecast Weather App</span>
+    </div>
+
+        <h2 class="weather-container--left-section--main-title">Weather Application & Forecast</h2>
+    
+        <p>Consult our application to know the weather day by day. Simple and pratical!</p>
+        <form class="weather-container--left-section--input-form" (ngSubmit)="searchCityWeather(search)">
+            <label class="weather-container--left-section--input-form--label" for="search">Enter the city in the search bar !</label>
+                <div class="weather-container--left-section--input-form--input-group">
+                    <img class="weather-container--left-section--input-form--input-group--icon" src="/assets/img/search_icon.png">
+                    <input [(ngModel)]="search" type="text" id="search" name="search" minlength="4" placeholder="Search City" class="weather-container--left-section--input-form--input-group--input" />
+                </div>
+            <button class="weather-container--left-section--input-form--submitButton" type="submit">View the Weather</button>
+        </form>
+
+    </section>
+    <section class="weather-container--right-section">
+        <div class="weather-container--right-section--background"></div>
+        <app-card class="weather-container--right-section--front-card" [card]="day1"></app-card>
+        <app-card class="weather-container--right-section--back-card" [card]="day2"></app-card>
+    </section>
 </div>

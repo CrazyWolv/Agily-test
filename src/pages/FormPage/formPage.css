@@ -12,16 +12,30 @@ h2.formpage-container--main-title{
     background: -webkit-linear-gradient(#2EC867, #E8E9A1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width:50%;font-weight:bold;
+    width:50%;
+    font-weight:bold;
 }
 
-.formpage-container--input-div{
+.formpage-container--input-form{
     display:flex;
     flex-wrap: nowrap;
     align-items: center;
     width:50%;
 }
-.formpage-container--input-div--input{
+.formpage-container--input-form--input-group{
+    position:relative;
+    width:90%;
+}
+.formpage-container--input-form--input-group--icon{
+    position:absolute;
+    right:0;
+    opacity:0.3;
+    padding: 10px 0px;
+    width:30px;
+    height:30px;
+}
+
+.formpage-container--input-form--input-group--input{
     display:block;
     background-color:white;
     height:50px;
@@ -30,15 +44,26 @@ h2.formpage-container--main-title{
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-}
-
-.formpage-container--input-div--input{
     border:none;
-    padding:5px;
-    width:90%;
+    padding:0 10px;
+    width:100%;
 }
-
-.formpage-container--input-div--input::placeholder{
+.formpage-container--input-form--input-group--input::placeholder{
     color:#134601;font-weight: bold;
     font-size:15px;
+}
+
+@media screen and (min-height: 650px) and (orientation: portrait) {
+    h2.formpage-container--main-title{
+        font-size:3.5rem; 
+        width:90%;
+    }
+
+    .formpage-container--input-form{
+        width:90%;
+    }
+}
+
+@media screen and (min-height: 750px){
+
 }

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 
-import { FormPageComponent } from './formPage';
+import { FormPageWeatherComponent } from './formPageWeather';
 import { ComponentsModules } from 'src/modules/components.module';
 
 @NgModule({
   declarations: [
-    FormPageComponent
+    FormPageWeatherComponent
   ],
   imports: [
     ComponentsModules
   ],
   providers: [],
-  bootstrap: [FormPageComponent]
+  bootstrap: [FormPageWeatherComponent]
 })
-export class FormPageModule { }
+export class FormPageWeatherModule { }

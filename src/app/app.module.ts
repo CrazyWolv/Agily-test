@@ -1,20 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
-
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ComponentsModules } from 'src/modules/componentModules';
+import { ComponentsModules } from 'src/modules/components.module';
+import { ApiCalls } from 'src/provider/api/apiCall';
+import { routes } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule, AppRoutingModule, 
-    ComponentsModules
+    BrowserModule, 
+    AppRoutingModule, 
+    CommonModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [ApiCalls],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

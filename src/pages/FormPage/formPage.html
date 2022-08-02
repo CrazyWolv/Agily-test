@@ -1,7 +1,15 @@
 <div class="formpage-container">
     <h2 class="formpage-container--main-title">The Forecast Weather App</h2>
 
-    <form class="formpage-container--input-div" (ngSubmit)="searchCityWeather(search)">
-        <input [(ngModel)]="search" type="text" id="search" name="search" minlength="4" placeholder="Search" class="formpage-container--input-div--input" /><img>
+    <!-- <div class="weather-container--left-section--input-form--input-group">
+        <img class="weather-container--left-section--input-form--input-group--icon" src="/assets/img/search_icon.png">
+        <input type="text" id="search" name="search" minlength="4" placeholder="Search City" class="weather-container--left-section--input-form--input-group--input" />
+    </div> -->
+
+    <form class="formpage-container--input-form" (ngSubmit)="searchCityWeather(search)">
+        <div class="formpage-container--input-form--input-group">
+            <img class="formpage-container--input-form--input-group--icon" src="/assets/img/search_icon.png">
+            <input [(ngModel)]="search" type="text" id="search" name="search" minlength="4" placeholder="Search" class="formpage-container--input-form--input-group--input" />
+        </div>
     </form>
 </div>

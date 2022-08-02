@@ -1,0 +1,32 @@
+<div class="formpage-weather-container">
+    <div class="formpage-weather-container--back-button" (click)="goBackToSearch()">❰</div>
+
+    <div class="formpage-weather-container--card-flex-content">
+        <section class="formpage-weather-container--card-flex-content--main-card-section">
+            <div class="formpage-weather-container--card-flex-content--main-card-section--card-title">
+                <img src="http://simpleicon.com/wp-content/uploads/rain.png"> <h2>Lundi 7 Mars</h2>
+            </div>
+            <div class="formpage-weather-container--card-flex-content--main-card-section--card-content">
+                <div class="formpage-weather-container--card-flex-content--main-card-section--card-content-columnL">
+                    <p>Jour - 36,6°C</p>
+                    <p>Nuit - 25,1°C</p>
+                    <p>Humidité - 34%</p>
+                </div>
+                <div class="formpage-weather-container--card-flex-content--main-card-section--card-content-columnR">
+                    <p>Pression - 1019hPa</p>
+                    <p>Vent - 1,54km/H</p>
+                </div>
+            </div>
+        </section>
+        <section class="formpage-weather-container--card-flex-content--otherDays-card-section">
+            <div class="formpage-weather-container--card-flex-content--otherDays-card-section--card" *ngFor="let day of weatherDatas;">
+                <img src="http://simpleicon.com/wp-content/uploads/rain.png"> 
+                <div class="formpage-weather-container--card-flex-content--otherDays-card-section--card-day">
+                    <h2>{{ day.day }}</h2>
+                    <span>16 Mai</span>
+                </div>
+                <p>{{ day.temp }}</p>
+            </div>
+        </section>
+    </div>
+</div>

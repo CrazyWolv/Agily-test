@@ -1,0 +1,17 @@
+<div class="card-container" *ngIf="card">
+    <div class="card-content">
+        <div class="card-content--header">
+            <img class="card-content--header--icon" src="/assets/img/pin_icon.png"> {{ card.cityName }}
+        </div>
+        <div class="card-content--main-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/169/169367.png">
+            <p>{{ card.temp }}</p>
+            <p>{{ card.day }}</p>
+        </div>
+        <div class="card-content--footer">
+            <p>Pressure <span>{{ card.pressure ? card.pressure : 'N/A' }}hPa</span></p>
+            <p>Humidity <span>{{ card.humidity ? card.humidity : 'N/A' }}%</span></p>
+            <p>Wind <span>{{ card.wind ? card.wind : 'N/A' }}km/H</span></p>
+        </div>
+    </div>
+</div>

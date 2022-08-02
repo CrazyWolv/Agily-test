@@ -1,0 +1,184 @@
+.formpage-weather-container{
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    background: url("https://img.freepik.com/free-vector/city-skyline-summer-time-urban-view-background_107791-9101.jpg?w=1380&t=st=1659439588~exp=1659440188~hmac=fd7c9cb6b953748d11294e64e572c3f0917e55cadc33288f5799185b24f7134b");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:auto;
+}
+
+.formpage-weather-container--back-button{
+    width:70px;
+    height:70px;
+    background-color: #134601;
+    color:white;
+    font-size:1.5rem;
+    cursor:pointer;
+    position:absolute;
+    top: 1.5rem; 
+    left: 1.5rem;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.formpage-weather-container--card-flex-content{
+    display:flex;
+    width:100%;
+}
+
+.formpage-weather-container--card-flex-content--main-card-section{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    background-color: rgba(19, 70, 1, 0.8);
+    color:white;
+    position:absolute;
+    padding:20px;
+    bottom:0;
+    left:2rem;
+    width:40%;
+    height:30%;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+} 
+.formpage-weather-container--card-flex-content--main-card-section--card-title{
+    display:flex;
+    width:100%;
+    align-items: baseline;
+    justify-content: flex-start;
+} 
+.formpage-weather-container--card-flex-content--main-card-section--card-title h2{
+    font-size:2.5rem;
+} 
+.formpage-weather-container--card-flex-content--main-card-section--card-content{
+    display:flex;
+    padding:10px 0;
+    text-align:left;
+} 
+.formpage-weather-container--card-flex-content--main-card-section--card-title img, 
+.formpage-weather-container--card-flex-content--otherDays-card-section--card img{
+    display:block;
+    color:white;
+    width:50px;
+    height:50px;
+}
+.formpage-weather-container--card-flex-content--main-card-section--card-title img{
+    padding:0 10%;
+}
+.formpage-weather-container--card-flex-content--otherDays-card-section--card img{
+    padding:0;
+    margin: auto 0;
+}
+.formpage-weather-container--card-flex-content--main-card-section--card-content-columnL, 
+.formpage-weather-container--card-flex-content--main-card-section--card-content-columnR{
+    width:30%;
+    margin-left:10%;
+}
+
+.formpage-weather-container--card-flex-content--otherDays-card-section{
+    color:white;
+    width:30%;
+    position:absolute;
+    right:2rem;
+    top:1.5rem;
+} 
+.formpage-weather-container--card-flex-content--otherDays-card-section--card{
+    cursor:pointer;
+    background-color: rgba(19, 70, 1, 0.8);
+    padding:0 10px;
+    margin:30px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.formpage-weather-container--card-flex-content--otherDays-card-section--card-day{
+    display:flex;
+    flex-direction:column;
+    gap: 0px;
+}
+.formpage-weather-container--card-flex-content--otherDays-card-section--card-day h2{
+    font-size:2rem;
+}
+.formpage-weather-container--card-flex-content--otherDays-card-section--card-day span{
+    margin-top:-20px;
+    font-weight: lighter;
+}
+.formpage-weather-container--card-flex-content--otherDays-card-section--card p{
+    font-size:2rem;
+}
+
+@media screen and (min-height: 650px) and (orientation: portrait) {
+    .formpage-weather-container--back-button{
+        width:40px;
+        height:40px;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .formpage-weather-container--card-flex-content{
+        flex-direction: column;
+    }
+    .formpage-weather-container--card-flex-content--main-card-section{
+        position:relative;
+        top: 0;
+        left: 0;
+        right:0;
+        margin: 30px 2% 0 auto;
+        width:80%;
+        padding:10px 0;
+        border-radius:20px;
+        -webkit-border-radius:20px;
+        -moz-border-radius:20px;
+        -ms-border-radius:20px;
+        -o-border-radius:20px;
+    } .formpage-weather-container--card-flex-content--main-card-section--card-title h2{
+        font-size:1.9rem;
+    } 
+    .formpage-weather-container--card-flex-content--main-card-section--card-title img{
+        width:40px; 
+        height:40px;
+        padding: 0 7%;
+    }
+
+    .formpage-weather-container--card-flex-content--otherDays-card-section{
+        position: relative;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 2% 0 auto;
+    }
+    .formpage-weather-container--card-flex-content--otherDays-card-section--card{
+        margin:10px 0;
+        padding: 0px 15px;
+        width:auto;
+    }
+    .formpage-weather-container--card-flex-content--otherDays-card-section--card-day{
+        margin:auto 0;
+    }
+    .formpage-weather-container--card-flex-content--otherDays-card-section--card-day h2{
+        font-size:1.5rem;
+    }
+}
+
+@media screen and (min-height: 750px){
+
+}

@@ -1,0 +1,11 @@
+<div class="minicard-container" (click)="clickOnCard()" [ngClass]="{'clicked': this.clicked === true}">
+    <div class="minicard-content">
+        <div class="minicard-content--main-content">
+            <img src="https://cdn-icons-png.flaticon.com/512/169/169367.png">
+            <div class="minicard-content--main-content--text">
+                <span>{{ miniCard?.temp }}</span>
+                <span>{{ miniCard?.day }}</span>
+            </div>
+        </div>
+    </div>
+</div>
